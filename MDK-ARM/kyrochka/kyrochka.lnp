@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"kyrochka\startup_stm32f103xb.o"
+"kyrochka\stm32f1xx_it.o"
+"kyrochka\main.o"
+"kyrochka\stm32f1xx_hal_msp.o"
+"kyrochka\stm32f1xx_hal_gpio_ex.o"
+"kyrochka\stm32f1xx_hal_tim.o"
+"kyrochka\stm32f1xx_hal_tim_ex.o"
+"kyrochka\stm32f1xx_hal_rcc_ex.o"
+"kyrochka\stm32f1xx_hal_rcc.o"
+"kyrochka\stm32f1xx_hal_flash.o"
+"kyrochka\stm32f1xx_hal_flash_ex.o"
+"kyrochka\stm32f1xx_hal_gpio.o"
+"kyrochka\stm32f1xx_hal.o"
+"kyrochka\stm32f1xx_hal_dma.o"
+"kyrochka\stm32f1xx_hal_cortex.o"
+"kyrochka\stm32f1xx_hal_pwr.o"
+"kyrochka\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "kyrochka\kyrochka.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "kyrochka.map" -o kyrochka\kyrochka.axf
